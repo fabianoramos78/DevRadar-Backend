@@ -7,6 +7,7 @@ const app = express();
 mongoose.connect('mongodb+srv://fabiano:141501@cluster0-x0gzq.mongodb.net/ominstack10?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true
 })
 
 app.use(express.json(), routes) // permitindo JSON na aplicação com Express
